@@ -2,6 +2,7 @@
   section#shop-by-style {
     width: 100%;
     padding-top: 16.24%;
+    overflow: hidden;
     h3.section-title {
       font-family: "Futura";
       text-align: center;
@@ -30,27 +31,25 @@
       margin-left: 14.13%;
       display: flex;
       justify-content: space-between;
-      .product {
+      overflow: hidden;
+      .mobile-current {
         display: flex;
         flex-direction: column;
-        justify-content: baseline;
-        max-width: 208px;
-        width: 100%;
+        width: 208px;
+        margin-right: 23px;
         img.product-image {
-          margin-bottom: 5.59%;
+          margin-bottom: 5.33%;
           height: 297px;
         }
         p.product-title {
           font-family: "Futura", sans-serif;
-          font-size: 18px;
           font-size: 4.8vw;
           line-height: 24px;
           color: #2a2a2a;
-          margin-bottom: 3.48%;
+          margin-bottom: 3.2%;
         }
         p.product-price {
           font-family: "Futura", sans-serif;
-          font-size: 14px;
           font-size: 3.8vw;
           color: #a6abb2;
           margin-bottom: 3.2%;
@@ -58,14 +57,6 @@
         img.product-favorite {
           max-width: 24px;
           width: 100%;
-        }
-        &.current {
-          margin-right: 6.13px;
-        }
-        &.next {
-          position: absolute;
-          right: -35%;
-          overflow: hidden;
         }
       }
     }

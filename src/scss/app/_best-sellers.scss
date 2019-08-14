@@ -2,6 +2,7 @@
   section#best-sellers {
     width: 100%;
     padding-top: 6.13%;
+    overflow: hidden;
     h3.section-title {
       font-family: "Futura";
       text-align: center;
@@ -15,6 +16,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 8.97%;
+      overflow: hidden;
       .category {
         font-family: "LTC Bodoni 175 Pro", sans-serif;
         font-size: 7vw;
@@ -30,11 +32,12 @@
       margin: 0 0 7.2% 13.33%;
       display: flex;
       justify-content: space-between;
-      .product {
+      overflow: hidden;
+      .mobile-current {
         display: flex;
         flex-direction: column;
-        max-width: 208px;
-        width: 100%;
+        width: 208px;
+        margin-right: 23px;
         img.product-image {
           margin-bottom: 5.33%;
           height: 297px;
@@ -55,14 +58,6 @@
         img.product-favorite {
           max-width: 24px;
           width: 100%;
-        }
-        &.current {
-          margin-right: 6.13px;
-        }
-        &.next {
-          position: absolute;
-          right: -35%;
-          overflow: hidden;
         }
       }
     }
