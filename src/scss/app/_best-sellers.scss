@@ -1,0 +1,84 @@
+@media all and (max-width: 480px) {
+  section#best-sellers {
+    width: 100%;
+    padding-top: 6.13%;
+    h3.section-title {
+      font-family: "Futura";
+      text-align: center;
+      color: #a6abb2;
+      font-size: 4.25vw;
+      margin-bottom: 6.13%;
+    }
+    .category-row {
+      margin: 0 11px;
+      margin: 0 2.93%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8.97%;
+      .category {
+        font-family: "LTC Bodoni 175 Pro";
+        font-size: 7vw;
+        text-transform: capitalize;
+        color: #909090;
+        &.selected {
+          color: #000;
+          border-bottom: 2px solid #000;
+        }
+      }
+    }
+    .image-row {
+      margin: 0 0 7.2% 13.33%;
+      display: flex;
+      justify-content: space-between;
+      .product {
+        display: flex;
+        flex-direction: column;
+        max-width: 208px;
+        width: 100%;
+        img.product-image {
+          margin-bottom: 5.33%;
+          height: 297px;
+        }
+        p.product-title {
+          font-family: "Futura", sans-serif;
+          font-size: 4.8vw;
+          line-height: 24px;
+          color: #2a2a2a;
+          margin-bottom: 3.2%;
+        }
+        p.product-price {
+          font-family: "Futura", sans-serif;
+          font-size: 3.8vw;
+          color: #a6abb2;
+          margin-bottom: 3.2%;
+        }
+        img.product-favorite {
+          max-width: 24px;
+          width: 100%;
+        }
+        &.current {
+          margin-right: 6.13px;
+        }
+        &.next {
+          position: absolute;
+          right: -35%;
+          overflow: hidden;
+        }
+      }
+    }
+    .view-all-btn {
+      margin: 0 auto;
+      width: 73.33%;
+      background: #2a2a2a;
+      padding: 3.73% 21.33%;
+      p.btn-text {
+        font-family: "Futura", sans-serif;
+        font-size: 3.8vw;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+  }
+}

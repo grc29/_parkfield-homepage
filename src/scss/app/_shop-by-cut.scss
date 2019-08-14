@@ -1,0 +1,57 @@
+@media all and (max-width: 480px) {
+  section#shop-by-cut {
+    width: 100%;
+    padding-top: 11.47%;
+    h3.section-title {
+      font-family: "Futura";
+      text-align: center;
+      color: #a6abb2;
+      font-size: 4.2vw;
+      color: #a6abb2;
+      margin-bottom: 4.8%;
+    }
+    .category {
+      position: relative;
+      margin: 0 3.73%;
+      width: 92.53%;
+      height: 362px;
+      margin-bottom: 10.67%;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      &.tankinis {
+        background-image: url("/images/tankinis.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &.onepieces {
+        background-image: url("/images/onepieces.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &.bikinis {
+        background-image: url("/images/bikinis.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .img-text {
+        position: absolute;
+        background: #fff;
+        left: 2.93%;
+        bottom: -2.13%;
+        padding: 1.15% 5.2%;
+        p {
+          font-family: "LTC Bodoni 175 Pro";
+          font-size: 8.5vw;
+          color: #2a2a2a;
+          text-align: center;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
