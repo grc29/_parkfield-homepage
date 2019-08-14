@@ -1,0 +1,51 @@
+@media all and (max-width: 480px) {
+  section#follow-us {
+    width: 100%;
+    padding-top: 18.4%;
+    h3.section-title {
+      font-family: "Futura", sans-serif;
+      font-size: 4.2vw;
+      text-align: center;
+      color: #a6abb2;
+      margin-bottom: 2.13%;
+    }
+    h4.social-handle {
+      font-family: "LTC Bodoni 175 Pro", sans-serif;
+      font-size: 6.5vw;
+      text-align: center;
+      color: #000;
+      margin-bottom: 4%;
+    }
+    .image-grid-desktop {
+      display: none;
+    }
+    .image-grid-mobile {
+      margin: 0 5.33%;
+      display: grid;
+      grid-template-columns: 49.25% 49.25%;
+      grid-template-rows: 165px 165px;
+      grid-row-gap: 1.33%;
+      grid-column-gap: 5px;
+      margin-bottom: 5.33%;
+      .social-image {
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &.one {
+          background-image: url("/images/1-mobile.png");
+        }
+        &.two {
+          background-image: url("/images/2-mobile.png");
+        }
+        &.three {
+          background-image: url("/images/3-mobile.png");
+        }
+        &.four {
+          background-image: url("/images/4-mobile.png");
+        }
+      }
+    }
+  }
+}

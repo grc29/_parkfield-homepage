@@ -1,0 +1,149 @@
+@media all and (max-width: 480px) {
+  footer {
+    padding: 13.07% 0 7.2%;
+    background: #f4fdff;
+    h3.footer-title {
+      font-family: "LTC Bodoni 175 Pro", sans-serif;
+      font-size: 6.4vw;
+      line-height: 29px;
+      color: #2a2a2a;
+      margin: 0 auto 1.33% 4.53%;
+    }
+    h4.footer-subtitle {
+      font-family: "Futura", sans-serif;
+      font-size: 4.3vw;
+      line-height: 19px;
+      color: #2a2a2a;
+      margin: 0 4.8% 7.47% 4.8%;
+    }
+    .subscription-form {
+      width: 86.93%;
+      border: 2px solid #2a2a2a;
+      box-sizing: border-box;
+      padding: 4.27% 5.33%;
+      display: flex;
+      margin: 0 9.07% 10.67% 4.8%;
+      justify-content: space-between;
+      input.email-field {
+        background: transparent;
+        border: none;
+        width: 100%;
+        font-family: "Futura", sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2a2a2a;
+        &::placeholder {
+          font-family: "Futura", sans-serif;
+          font-size: 16px;
+          line-height: 22px;
+          color: #2a2a2a;
+        }
+      }
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 10.67%;
+      .shop-links {
+        width: 32.53%;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 13.07% 0 6.4%;
+        h4.link-title {
+          font-family: "LTC Bodoni 175 Pro", sans-serif;
+          font-size: 6.4vw;
+          line-height: 29px;
+          text-transform: capitalize;
+          color: #2a2a2a;
+        }
+        a {
+          text-decoration: none;
+          font-family: "Futura", sans-serif;
+          font-size: 4.2vw;
+          line-height: 19px;
+          text-transform: capitalize;
+          color: #2a2a2a;
+        }
+      }
+      .explore-links {
+        width: 26.4%;
+        height: 261px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: auto;
+        h4.link-title {
+          font-family: "LTC Bodoni 175 Pro", sans-serif;
+          font-size: 6.4vw;
+          line-height: 29px;
+          text-transform: capitalize;
+          color: #2a2a2a;
+        }
+        a {
+          text-decoration: none;
+          font-family: "Futura", sans-serif;
+          font-size: 4.2vw;
+          line-height: 19px;
+          text-transform: capitalize;
+          color: #2a2a2a;
+        }
+      }
+      .customer-service-links {
+        width: 48.27%;
+        height: 261px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10.67% 0 0 6.4%;
+        h4.link-title {
+          font-family: "LTC Bodoni 175 Pro", sans-serif;
+          font-size: 6.4vw;
+          line-height: 29px;
+          text-transform: capitalize;
+          color: #2a2a2a;
+        }
+        a {
+          text-decoration: none;
+          font-family: "Futura", sans-serif;
+          font-size: 4.2vw;
+          line-height: 19px;
+          text-transform: capitalize;
+          color: #2a2a2a;
+        }
+      }
+    }
+    h4.follow-us {
+      font-family: "LTC Bodoni 175 Pro", sans-serif;
+      font-size: 6.4vw;
+      line-height: 29px;
+      text-transform: capitalize;
+      color: #2a2a2a;
+      margin: 0 0 5.33% 6.4%;
+    }
+    .social-row {
+      margin: 0 0 16% 6.67%;
+      width: 51.27%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p.disclaimer {
+      font-family: "Futura", sans-serif;
+      font-size: 3.7vw;
+      line-height: 17px;
+      text-transform: capitalize;
+      color: #2a2a2a;
+      text-align: center;
+      margin-bottom: 6.93%;
+    }
+    .card-row {
+      width: 77.33%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+  }
+}
