@@ -1,62 +1,191 @@
-@media all and (max-width: 480px) {
-  section#featured-collection {
+section#featured-collection {
+  width: 100%;
+  padding-top: 16.24%;
+  h3.desktop-title {
+    display: none;
+  }
+  h3.mobile-title {
+    font-family: "Futura", sans-serif;
+    font-size: 4.3vw;
+    color: #a6abb2;
+    text-align: center;
+    margin-bottom: 0.8%;
+  }
+  h4.collection-name {
+    font-family: "LTC Bodoni 175 Pro", sans-serif;
+    font-size: 9.5vw;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    margin-bottom: 3.2%;
+  }
+  .collection-img {
     width: 100%;
-    padding-top: 16.24%;
+    height: 532px;
+    position: relative;
+    background: url("/images/featured-collection.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .tag {
+      position: absolute;
+      width: 43.45px;
+      height: 42.47px;
+      border-radius: 50%;
+      background: #fff;
+      opacity: 0.5;
+      &.first {
+        top: 29.7%;
+        left: 21.33%;
+      }
+      &.second {
+        top: 42.48%;
+        left: 61.33%;
+      }
+    }
+    .inner {
+      position: absolute;
+      width: 18.61px;
+      height: 18.18px;
+      border-radius: 50%;
+      background: #fff;
+      &.first {
+        top: 32.05%;
+        left: 24.74%;
+      }
+      &.second {
+        top: 44.83%;
+        left: 64.74%;
+      }
+    }
+  }
+  .desktop-preview {
+    display: none;
+  }
+  .product-wrapper {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  section#featured-collection {
+    margin: 10.42% 0 0 18.89%;
+    position: relative;
+    padding: 0;
     h3.desktop-title {
-      display: none;
+      display: inline-block;
+      font-family: "Futura", sans-serif;
+      font-size: 1.25vw;
+      line-height: 22px;
+      color: #67707c;
+      margin-bottom: 9px;
+      margin-bottom: 0.63%;
     }
     h3.mobile-title {
-      font-family: "Futura", sans-serif;
-      font-size: 4.3vw;
-      color: #a6abb2;
-      text-align: center;
-      margin-bottom: 0.8%;
+      display: none;
     }
     h4.collection-name {
-      font-family: "LTC Bodoni 175 Pro", sans-serif;
-      font-size: 9.5vw;
-      text-align: center;
-      text-transform: capitalize;
-      color: #2a2a2a;
-      margin-bottom: 3.2%;
+      font-size: 48px;
+      text-align: left;
+      margin-bottom: 33px;
     }
     .collection-img {
-      width: 100%;
-      height: 532px;
-      position: relative;
-      background-image: url("/images/featured-collection.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      z-index: 2;
+      max-width: 572px;
+      width: 39.72%;
+      height: 549px;
+      background: url("/images/desktop-collection.png");
       .tag {
-        position: absolute;
-        width: 43.45px;
-        height: 42.47px;
-        border-radius: 50%;
-        background: #fff;
-        opacity: 0.5;
         &.first {
-          top: 29.7%;
-          left: 21.33%;
+          width: 48px;
+          height: 48px;
+          top: 187px;
+          left: 28.67%;
         }
         &.second {
-          top: 42.48%;
-          left: 61.33%;
+          width: 30px;
+          height: 30px;
+          top: 146px;
+          left: 56.12%;
         }
       }
       .inner {
-        position: absolute;
-        width: 18.61px;
-        height: 18.18px;
-        border-radius: 50%;
-        background: #fff;
+        cursor: pointer;
         &.first {
-          top: 32.05%;
-          left: 24.74%;
+          width: 34px;
+          height: 34px;
+          top: 194px;
+          left: 29.9%;
         }
         &.second {
-          top: 44.83%;
-          left: 64.74%;
+          width: 21.43px;
+          height: 21.43px;
+          top: 150.29px;
+          left: 56.87%;
+        }
+      }
+    }
+    .desktop-preview {
+      display: block;
+      z-index: 1;
+      position: absolute;
+      width: 35.97%;
+      max-width: 518px;
+      height: 734px;
+      background: #f4fdff;
+      top: 48px;
+      left: 30.97%;
+    }
+    .product-wrapper {
+      display: block;
+      z-index: 4;
+      position: absolute;
+      background: #fff;
+      margin: 0 auto;
+      width: 27.5%;
+      max-width: 396px;
+      height: 550px;
+      top: 161px;
+      left: 34.79%;
+      img {
+        display: block;
+        margin: 40px auto;
+        margin: 10.1% auto;
+      }
+      p.preview-title {
+        font-family: "Futura", sans-serif;
+        font-size: 1.667vw;
+        line-height: 2.569vw;
+        margin-left: 7.07%;
+        color: #2a2a2a;
+        margin-bottom: 4.8%;
+      }
+      p.preview-price {
+        font-family: "Futura", sans-serif;
+        font-size: 1.25vw;
+        line-height: 22px;
+        margin-left: 7.07%;
+        color: #67707c;
+        margin-bottom: 12.12%;
+      }
+      .pattern-row {
+        width: 78.79%;
+        max-width: 312px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .pattern {
+          width: 55px;
+          height: 55px;
+          cursor: pointer;
+          &.selected {
+            border: 1px solid #000;
+          }
+          img {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }

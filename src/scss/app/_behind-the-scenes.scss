@@ -1,38 +1,98 @@
-@media all and (max-width: 480px) {
-  section#behind-the-scenes {
-    width: 100%;
-    padding-top: 60px;
-    h3.section-title {
-      font-family: "LTC Bodoni 175 Pro", sans-serif;
-      font-size: 36px;
-      line-height: 43px;
+section#behind-the-scenes {
+  width: 100%;
+  padding-top: 16%;
+  h4.section-top-title {
+    display: none;
+  }
+  h3.section-title {
+    font-family: "LTC Bodoni 175 Pro", sans-serif;
+    font-size: 9.6vw;
+    line-height: 43px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 7.49%;
+  }
+  .view-lookbook-btn {
+    width: 74.4%;
+    padding: 3.73% 18.4%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    background: #202020;
+    border-radius: 2px;
+    p.btn-text {
+      font-family: "Futura", sans-serif;
+      font-size: 4.267vw;
       text-align: center;
-      text-transform: capitalize;
-      color: #000;
-      margin-bottom: 28.08px;
+      text-transform: uppercase;
+      color: #fef8f2;
     }
-    .view-lookbook-btn {
-      width: 279px;
-      padding: 14px 69px;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      background: #202020;
-      border-radius: 2px;
-      p.btn-text {
-        font-family: "Futura", sans-serif;
-        font-size: 16px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #fef8f2;
-      }
-    }
-    .lookbook-img {
-      width: 100%;
-      height: 190px;
-      background-image: url("/images/lookbook.png");
+  }
+  .lookbook-img {
+    width: 100%;
+    height: 190px;
+    background: url("/images/lookbook.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media all and (min-width: 768px) {
+  section#behind-the-scenes {
+    padding: 0;
+    margin-top: 19.38%;
+    position: relative;
+    .desktop-group {
+      width: 42.08%;
+      margin-top: 7.29%;
+      background: url("/images/lookbook-bg.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      z-index: 2;
+      display: inline-block;
+      h4.section-top-title {
+        display: block;
+        font-family: "Futura", sans-serif;
+        font-size: 1.25vw;
+        line-height: 22px;
+        color: #67707c;
+        margin-bottom: 2.31%;
+        margin-left: 14.85%;
+        margin-top: 8.25%;
+        z-index: 2;
+      }
+      h3.section-title {
+        font-size: 3.333vw;
+        text-align: left;
+        margin-bottom: 2.81%;
+        margin-left: 14.85%;
+        z-index: 2;
+      }
+      .view-lookbook-btn {
+        width: 48.45%;
+        padding: 2.52% 10.66%;
+        margin: 0;
+        z-index: 2;
+        margin-left: 90px;
+        margin-left: 14.85%;
+        margin-bottom: 8.25%;
+        cursor: pointer;
+        p.btn-text {
+          font-size: 1.111vw;
+        }
+      }
+    }
+    .lookbook-img {
+      background: url("/images/desktop-lookbook.png");
+      height: 523px;
+      width: 74.93%;
+      max-width: 1079px;
+      position: absolute;
+      top: 0;
+      left: 25.83%;
+      z-index: -1;
     }
   }
 }

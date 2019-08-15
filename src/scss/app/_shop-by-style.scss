@@ -1,63 +1,131 @@
-@media all and (max-width: 480px) {
-  section#shop-by-style {
-    width: 100%;
-    padding-top: 16.24%;
+section#shop-by-style {
+  width: 100%;
+  padding-top: 16.24%;
+  overflow: hidden;
+  h3.section-title {
+    font-family: "Futura";
+    text-align: center;
+    color: #a6abb2;
+    font-size: 4.25vw;
+    margin-bottom: 6.49%;
+  }
+  .category-row {
+    margin: 0 8.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8.53%;
+    .category {
+      font-family: "LTC Bodoni 175 Pro", sans-serif;
+      font-size: 7vw;
+      text-transform: capitalize;
+      color: #909090;
+      &.selected {
+        color: #000;
+        border-bottom: 2px solid #000;
+      }
+    }
+  }
+  .image-row {
+    margin-left: 14.13%;
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
+    .mobile-current {
+      display: flex;
+      flex-direction: column;
+      width: 208px;
+      margin-right: 23px;
+      img.product-image {
+        margin-bottom: 5.33%;
+        height: 297px;
+      }
+      p.product-title {
+        font-family: "Futura", sans-serif;
+        font-size: 4.8vw;
+        line-height: 24px;
+        color: #2a2a2a;
+        margin-bottom: 3.2%;
+      }
+      p.product-price {
+        font-family: "Futura", sans-serif;
+        font-size: 3.8vw;
+        color: #a6abb2;
+        margin-bottom: 3.2%;
+      }
+      img.product-favorite {
+        max-width: 24px;
+        width: 100%;
+      }
+    }
+    .desktop-product {
+      display: none;
+    }
+    .left-arrow,
+    .right-arrow {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  section#shop-by-style {
+    padding: 0;
+    margin-top: 17.57%;
     h3.section-title {
-      font-family: "Futura";
-      text-align: center;
-      color: #a6abb2;
-      font-size: 4.25vw;
-      margin-bottom: 6.49%;
+      font-size: 1.25vw;
+      text-align: left;
+      margin: 0 auto 1.11% 7.99%;
     }
     .category-row {
-      margin: 0 8.8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8.53%;
+      margin: 0 65.42% 3.47% 7.99%;
       .category {
-        font-family: "LTC Bodoni 175 Pro", sans-serif;
-        font-size: 7vw;
-        text-transform: capitalize;
-        color: #909090;
-        &.selected {
-          color: #000;
-          border-bottom: 2px solid #000;
-        }
+        font-size: 2.5vw;
       }
     }
     .image-row {
-      margin-left: 14.13%;
-      display: flex;
-      justify-content: space-between;
-      overflow: hidden;
+      margin: 0 3.82%;
+      justify-content: flex;
+      align-items: center;
       .mobile-current {
-        display: flex;
-        flex-direction: column;
-        width: 208px;
-        margin-right: 23px;
-        img.product-image {
-          margin-bottom: 5.33%;
-          height: 297px;
+        display: none;
+      }
+      .desktop-product {
+        display: inline-block;
+        margin-right: 2.43%;
+        &.last {
+          margin-right: 3.68%;
+        }
+        .product-img {
+          position: relative;
+          margin-bottom: 5.09%;
+          img.favorite {
+            position: absolute;
+            top: 2.6%;
+            right: 3.64%;
+            cursor: pointer;
+          }
         }
         p.product-title {
           font-family: "Futura", sans-serif;
-          font-size: 4.8vw;
-          line-height: 24px;
+          font-size: 1.667vw;
+          line-height: 32px;
           color: #2a2a2a;
-          margin-bottom: 3.2%;
+          margin-bottom: 9.09%;
         }
         p.product-price {
           font-family: "Futura", sans-serif;
-          font-size: 3.8vw;
+          font-size: 1.25vw;
+          line-height: 22px;
           color: #a6abb2;
-          margin-bottom: 3.2%;
         }
-        img.product-favorite {
-          max-width: 24px;
-          width: 100%;
-        }
+      }
+      .left-arrow,
+      .right-arrow {
+        display: inline-block;
+      }
+      .left-arrow {
+        margin-right: 4.03%;
       }
     }
   }

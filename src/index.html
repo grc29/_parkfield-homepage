@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable-=no"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
     <title>Anne Cole Designs</title>
@@ -13,6 +13,22 @@
   <body>
     <div id="container">
       <header>
+        <div class="shop-link">
+          <p class="link-text">
+            Shop
+            <span class="arrow"> <img src="./images/link-arrow.png"/></span>
+          </p>
+        </div>
+        <div class="collections-link">
+          <p class="link-text">
+            Collectons
+            <span class="arrow"> <img src="./images/link-arrow.png"/></span>
+          </p>
+        </div>
+        <div class="lookbook-link">
+          <p class="link-text">Lookbook</p>
+        </div>
+
         <div class="menu-icon">
           <img src="./images/menu-icon.png" />
         </div>
@@ -20,7 +36,17 @@
           <img src="./images/search-icon.png" />
         </div>
         <div class="logo">
-          <img src="./images/logo.png" />
+          <img class="mobile" src="./images/logo.png" />
+          <img src="./images/desktop-logo.png" class="desktop" />
+        </div>
+        <div class="shop-social-link">
+          <p class="link-text">Shop Social</p>
+        </div>
+        <div class="fit-guide-link">
+          <p class="link-text">Fit Guide</p>
+        </div>
+        <div class="blog-link">
+          <p class="link-text">Blog</p>
         </div>
         <div class="favorite-icon">
           <img src="./images/favorite-icon.png" />
@@ -29,17 +55,26 @@
           <img src="./images/cart-icon.png" />
         </div>
       </header>
-
       <section id="top-promo">
         <div class="shipping-promo">
           <p class="shipping-text">Free shipping on all orders over $75</p>
+          <div class="links">
+            <img src="./images/desktop-profile-icon.png" />
+            <img src="./images/desktop-favorite-icon.png" />
+            <img src="./images/desktop-search-icon.png" />
+            <img src="./images/desktop-cart-icon.png" />
+          </div>
         </div>
-        <div class="promo-img">
+        <div class="mobile-promo-img">
           <div class="img-text">
             <p class="top-text">New Collection</p>
             <p class="bottom-text">Resort 2018</p>
           </div>
         </div>
+      </section>
+
+      <section id="hero">
+        <div class="hero-img"><img src="./images/desktop-top.png" /></div>
       </section>
 
       <section id="best-sellers">
@@ -62,14 +97,56 @@
             <p class="product-price">$ 57.00</p>
             <img class="product-favorite" src="./images/product-favorite.png" />
           </div>
+          <div class="left-arrow">
+            <img src="./images/left-arrow.png" />
+          </div>
+          <div class="desktop-product">
+            <div class="product-img">
+              <img src="./images/product-image-1.png" />
+              <img class="favorite" src="./images/favorited-icon.png" />
+            </div>
+            <p class="product-title">Bandeau One Piece Swimsuit</p>
+            <p class="product-price">$ 57.00</p>
+          </div>
+          <div class="desktop-product">
+            <div class="product-img">
+              <img src="./images/product-image-2.png" />
+              <img class="favorite" src="./images/desktop-favorite-icon.png" />
+            </div>
+            <p class="product-title">Bandeau One Piece Swimsuit</p>
+            <p class="product-price">$ 57.00</p>
+          </div>
+          <div class="desktop-product">
+            <div class="product-img">
+              <img src="./images/product-image-3.png" />
+              <img class="favorite" src="./images/desktop-favorite-icon.png" />
+            </div>
+            <p class="product-title">Bandeau One Piece Swimsuit</p>
+            <p class="product-price">$ 57.00</p>
+          </div>
+          <div class="desktop-product last">
+            <div class="product-img">
+              <img src="./images/product-image-4.png" />
+              <img class="favorite" src="./images/desktop-favorite-icon.png" />
+            </div>
+            <p class="product-title">Bandeau One Piece Swimsuit</p>
+            <p class="product-price">$ 57.00</p>
+          </div>
+          <div class="right-arrow">
+            <img src="./images/right-arrow.png" />
+          </div>
         </div>
         <div class="view-all-btn">
           <p class="btn-text">View All</p>
+          <p class="desktop-text">See the Full Collection</p>
         </div>
       </section>
 
       <section id="shop-by-cut">
-        <h3 class="section-title">Shop by Cut</h3>
+        <h3 class="section-title">
+          <span>Lorem Ipsum Dolor</span> Shop by Cut
+        </h3>
+        <div class="backdrop"></div>
         <div class="category tankinis">
           <div class="img-text">
             <p>Tankinis</p>
@@ -88,12 +165,14 @@
       </section>
 
       <section id="cayman-islands">
-        <div class="logo-img">
-          <img src="./images/section-logo.png" />
-        </div>
-        <h3 class="section-title">Cayman Islands</h3>
-        <div class="shop-collection-btn">
-          <p class="btn-text">Shop The Collection</p>
+        <div class="desktop-group">
+          <div class="logo-img">
+            <img src="./images/section-logo.png" />
+          </div>
+          <h3 class="section-title">Cayman Islands</h3>
+          <div class="shop-collection-btn">
+            <p class="btn-text">Shop The Collection</p>
+          </div>
         </div>
         <div class="video">
           <div class="triangle"></div>
@@ -110,12 +189,35 @@
           <div class="tag second"></div>
           <div class="inner second"></div>
         </div>
+        <div class="desktop-preview"></div>
+        <div class="product-wrapper">
+          <img src="./images/collections-preview.png" />
+          <p class="preview-title">Bandeau One Piece Swimsuit</p>
+          <p class="preview-price">$ 42.98</p>
+          <div class="pattern-row">
+            <div class="pattern selected">
+              <img src="./images/pattern-1.png" />
+            </div>
+            <div class="pattern">
+              <img src="./images/pattern-2.png" />
+            </div>
+            <div class="pattern">
+              <img src="./images/pattern-3.png" />
+            </div>
+            <div class="pattern">
+              <img src="./images/pattern-4.png" />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="behind-the-scenes">
-        <h3 class="section-title">Behind The Scenes: Bermuda Shoot</h3>
-        <div class="view-lookbook-btn">
-          <p class="btn-text">View Lookbook</p>
+        <div class="desktop-group">
+          <h4 class="section-top-title">Lorem Ipsum Dolor</h4>
+          <h3 class="section-title">Behind The Scenes: Bermuda Shoot</h3>
+          <div class="view-lookbook-btn">
+            <p class="btn-text">View Lookbook</p>
+          </div>
         </div>
         <div class="lookbook-img"></div>
       </section>
@@ -143,6 +245,44 @@
             <p class="product-price">$ 57.00</p>
             <img class="product-favorite" src="./images/product-favorite.png" />
           </div>
+          <div class="left-arrow">
+            <img src="./images/left-arrow.png" />
+          </div>
+          <div class="desktop-product">
+            <div class="product-img">
+              <img src="./images/style-image-1.png" />
+              <img class="favorite" src="./images/desktop-favorite-icon.png" />
+            </div>
+            <p class="product-title">Bandeau One Piece Swimsuit</p>
+            <p class="product-price">$ 57.00</p>
+          </div>
+          <div class="desktop-product">
+            <div class="product-img">
+              <img src="./images/style-image-2.png" />
+              <img class="favorite" src="./images/desktop-favorite-icon.png" />
+            </div>
+            <p class="product-title">Bandeau One Piece Swimsuit</p>
+            <p class="product-price">$ 57.00</p>
+          </div>
+          <div class="desktop-product">
+            <div class="product-img">
+              <img src="./images/style-image-3.png" />
+              <img class="favorite" src="./images/desktop-favorite-icon.png" />
+            </div>
+            <p class="product-title">Bandeau One Piece Swimsuit</p>
+            <p class="product-price">$ 57.00</p>
+          </div>
+          <div class="desktop-product last">
+            <div class="product-img">
+              <img src="./images/style-image-4.png" />
+              <img class="favorite" src="./images/favorited-icon.png" />
+            </div>
+            <p class="product-title">Bandeau One Piece Swimsuit</p>
+            <p class="product-price">$ 57.00</p>
+          </div>
+          <div class="right-arrow">
+            <img src="./images/right-arrow.png" />
+          </div>
         </div>
       </section>
 
@@ -156,16 +296,16 @@
           <div class="social-image four"></div>
         </div>
         <div class="image-grid-desktop">
-          <div class="social-image 1"></div>
-          <div class="social-image 2"></div>
-          <div class="social-image 3"></div>
-          <div class="social-image 4"></div>
-          <div class="social-image 5"></div>
-          <div class="social-image 6"></div>
-          <div class="social-image 7"></div>
-          <div class="social-image 8"></div>
-          <div class="social-image 9"></div>
-          <div class="social-image 10"></div>
+          <div class="social-image one"></div>
+          <div class="social-image two"></div>
+          <div class="social-image three"></div>
+          <div class="social-image four"></div>
+          <div class="social-image five"></div>
+          <div class="social-image six"></div>
+          <div class="social-image seven"></div>
+          <div class="social-image eight"></div>
+          <div class="social-image nine"></div>
+          <div class="social-image ten"></div>
         </div>
       </section>
 
@@ -215,17 +355,19 @@
           </div>
         </div>
         <h4 class="follow-us">Follow Us!</h4>
-        <div class="social-row">
-          <img src="./images/fb-icon.png" />
-          <img src="./images/ig-icon.png" />
-          <img src="./images/tw-icon.png" />
-        </div>
-        <p class="disclaimer">&copy; 2018 Anne Cole | All Rights Reserved</p>
-        <div class="card-row">
-          <img src="./images/amex-icon.png" />
-          <img src="./images/paypal-icon.png" />
-          <img src="./images/master-icon.png" />
-          <img src="./images/visa-icon.png" />
+        <div class="desktop-group">
+          <div class="social-row">
+            <img src="./images/fb-icon.png" />
+            <img src="./images/ig-icon.png" />
+            <img src="./images/tw-icon.png" />
+          </div>
+          <p class="disclaimer">&copy; 2018 Anne Cole | All Rights Reserved</p>
+          <div class="card-row">
+            <img src="./images/amex-icon.png" />
+            <img src="./images/paypal-icon.png" />
+            <img src="./images/master-icon.png" />
+            <img src="./images/visa-icon.png" />
+          </div>
         </div>
       </footer>
     </div>

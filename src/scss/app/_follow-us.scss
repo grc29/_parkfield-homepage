@@ -1,32 +1,76 @@
-@media all and (max-width: 480px) {
+section#follow-us {
+  width: 100%;
+  padding-top: 18.4%;
+  h3.section-title {
+    font-family: "Futura", sans-serif;
+    font-size: 4.2vw;
+    text-align: center;
+    color: #a6abb2;
+    margin-bottom: 2.13%;
+  }
+  h4.social-handle {
+    font-family: "LTC Bodoni 175 Pro", sans-serif;
+    font-size: 6.5vw;
+    text-align: center;
+    color: #000;
+    margin-bottom: 4%;
+  }
+  .image-grid-desktop {
+    display: none;
+  }
+  .image-grid-mobile {
+    margin: 0 5.33%;
+    display: grid;
+    grid-template-columns: 49.25% 49.25%;
+    grid-template-rows: 165px 165px;
+    grid-row-gap: 1.33%;
+    grid-column-gap: 5px;
+    margin-bottom: 5.33%;
+    .social-image {
+      width: 100%;
+      height: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &.one {
+        background: url("/images/1-mobile.png");
+      }
+      &.two {
+        background: url("/images/2-mobile.png");
+      }
+      &.three {
+        background: url("/images/3-mobile.png");
+      }
+      &.four {
+        background: url("/images/4-mobile.png");
+      }
+    }
+  }
+}
+@media all and (min-width: 768px) {
   section#follow-us {
-    width: 100%;
-    padding-top: 18.4%;
+    padding-top: 121.62px;
     h3.section-title {
-      font-family: "Futura", sans-serif;
-      font-size: 4.2vw;
-      text-align: center;
-      color: #a6abb2;
-      margin-bottom: 2.13%;
+      font-size: 1.25vw;
+      margin-bottom: 0.49%;
     }
     h4.social-handle {
-      font-family: "LTC Bodoni 175 Pro", sans-serif;
-      font-size: 6.5vw;
-      text-align: center;
-      color: #000;
-      margin-bottom: 4%;
-    }
-    .image-grid-desktop {
-      display: none;
+      font-size: 2.5vw;
+      margin-bottom: 2.57%;
     }
     .image-grid-mobile {
-      margin: 0 5.33%;
+      display: none;
+    }
+    .image-grid-desktop {
+      display: block;
       display: grid;
-      grid-template-columns: 49.25% 49.25%;
-      grid-template-rows: 165px 165px;
-      grid-row-gap: 1.33%;
-      grid-column-gap: 5px;
-      margin-bottom: 5.33%;
+      margin: 0;
+      width: 100%;
+      grid-template-columns: 19.44% 19.44% 19.44% 19.44% 19.44%;
+      grid-template-rows: 280px 280px;
+      grid-row-gap: 10px;
+      grid-column-gap: 0.69%;
+      margin-bottom: 0.69%;
       .social-image {
         width: 100%;
         height: auto;
@@ -34,16 +78,34 @@
         background-repeat: no-repeat;
         background-size: cover;
         &.one {
-          background-image: url("/images/1-mobile.png");
+          background: url("/images/1-desktop.png");
         }
         &.two {
-          background-image: url("/images/2-mobile.png");
+          background: url("/images/2-desktop.png");
         }
         &.three {
-          background-image: url("/images/3-mobile.png");
+          background: url("/images/3-desktop.png");
         }
         &.four {
-          background-image: url("/images/4-mobile.png");
+          background: url("/images/4-desktop.png");
+        }
+        &.five {
+          background: url("/images/5-desktop.png");
+        }
+        &.six {
+          background: url("/images/6-desktop.png");
+        }
+        &.seven {
+          background: url("/images/7-desktop.png");
+        }
+        &.eight {
+          background: url("/images/8-desktop.png");
+        }
+        &.nine {
+          background: url("/images/9-desktop.png");
+        }
+        &.ten {
+          background: url("/images/10-desktop.png");
         }
       }
     }

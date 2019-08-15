@@ -1,46 +1,76 @@
-@media all and (max-width: 480px) {
-  section#top-promo {
+section#top-promo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  order: -1;
+  .shipping-promo {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    .shipping-promo {
-      width: 100%;
-      padding: 1.33% 0;
-      background: #f4fdff;
-      p.shipping-text {
-        margin: 0 auto;
-        font-size: 3.75vw;
-        text-align: center;
-        color: #5c5c5c;
+    padding: 1.33% 0;
+    background: #f4fdff;
+    .links {
+      display: none;
+    }
+    p.shipping-text {
+      margin: 0 auto;
+      font-size: 3.75vw;
+      text-align: center;
+      color: #5c5c5c;
+      font-family: "Futura", sans-serif;
+    }
+  }
+  .mobile-promo-img {
+    position: relative;
+    width: 100%;
+    height: 547px;
+    background-image: url("/images/promo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .img-text {
+      position: absolute;
+      background: #fff;
+      left: 0px;
+      bottom: 60px;
+      padding: 5.33% 4.8% 6.67% 3.47%;
+      color: #2a2a2a;
+      p.top-text {
         font-family: "Futura", sans-serif;
+        font-size: 4.25vw;
+        margin-bottom: 5px;
+      }
+      p.bottom-text {
+        font-family: "LTC Bodoni 175 Pro", sans-serif;
+        font-size: 10.7vw;
+        text-transform: capitalize;
       }
     }
-    .promo-img {
-      position: relative;
-      width: 100%;
-      height: 547px;
-      background-image: url("/images/promo.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      .img-text {
-        position: absolute;
-        background: #fff;
-        left: 0px;
-        bottom: 60px;
-        padding: 5.33% 4.8% 6.67% 3.47%;
-        color: #2a2a2a;
-        p.top-text {
-          font-family: "Futura", sans-serif;
-          font-size: 4.25vw;
-          margin-bottom: 5px;
-        }
-        p.bottom-text {
-          font-family: "LTC Bodoni 175 Pro", sans-serif;
-          font-size: 10.7vw;
-          text-transform: capitalize;
+  }
+}
+@media all and (min-width: 768px) {
+  section#top-promo {
+    flex-direction: row;
+    .shipping-promo {
+      display: flex;
+      padding: 0.83% 0;
+      p.shipping-text {
+        margin-right: 20.63%;
+        font-size: 1vw;
+        vertical-align: middle;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        margin-right: 5.69%;
+        img {
+          margin-right: 50px;
+          &:last-of-type {
+            margin-right: 0;
+          }
         }
       }
+    }
+    .mobile-promo-img {
+      display: none !important;
     }
   }
 }

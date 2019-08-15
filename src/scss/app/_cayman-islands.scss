@@ -1,57 +1,99 @@
-@media all and (max-width: 480px) {
-  section#cayman-islands {
-    width: 100%;
-    padding-top: 16%;
-    .logo-img {
-      margin-bottom: 1.47%;
-      img {
-        display: block;
-        margin: 0 auto;
-        max-width: 120px;
-      }
-    }
-    h3.section-title {
-      font-family: "LTC Bodoni 175 Pro", sans-serif;
-      font-size: 11.5vw;
-      text-align: center;
-      text-transform: capitalize;
-      color: #2a2a2a;
-      margin-bottom: 2.67%;
-    }
-    .shop-collection-btn {
-      width: 279px;
-      height: 49px;
-      padding: 14px 45px;
-      background: #202020;
-      border-radius: 2px;
+section#cayman-islands {
+  width: 100%;
+  padding-top: 16%;
+  .logo-img {
+    margin-bottom: 1.47%;
+    img {
+      display: block;
       margin: 0 auto;
-      margin-bottom: 30px;
-      p.btn-text {
-        text-align: center;
-        font-family: "Futura", sans-serif;
-        font-size: 16px;
-        text-transform: uppercase;
-        color: #fef8f2;
+      max-width: 120px;
+    }
+  }
+  h3.section-title {
+    font-family: "LTC Bodoni 175 Pro", sans-serif;
+    font-size: 11.5vw;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    margin-bottom: 2.67%;
+  }
+  .shop-collection-btn {
+    width: 74.4%;
+    padding: 3.73% 12%;
+    background: #202020;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    p.btn-text {
+      text-align: center;
+      font-family: "Futura", sans-serif;
+      font-size: 4.267vw;
+      text-transform: uppercase;
+      color: #fef8f2;
+    }
+  }
+  .video {
+    width: 100%;
+    height: 190px;
+    background: url("/images/cayman-island.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    .triangle {
+      position: absolute;
+      top: 43.16%;
+      left: 46.67%;
+
+      width: 0;
+      height: 0;
+      border-top: 12.5px solid transparent;
+      border-bottom: 12.5px solid transparent;
+      border-left: 24px solid #fff;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  section#cayman-islands {
+    padding: 0;
+    position: relative;
+    .video {
+      width: 82.71%;
+      height: 510px;
+      background: url("/images/desktop-cayman.png");
+      .triangle {
+        display: none;
       }
     }
-    .video {
-      width: 100%;
-      height: 190px;
-      background-image: url("/images/cayman-island.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      .triangle {
-        position: absolute;
-        top: 43.16%;
-        left: 46.67%;
-
-        width: 0;
-        height: 0;
-        border-top: 12.5px solid transparent;
-        border-bottom: 12.5px solid transparent;
-        border-left: 24px solid #fff;
+    .desktop-group {
+      width: 34.65%;
+      background: #f4fdff;
+      padding: 2.43% 4.93%;
+      position: absolute;
+      top: 134px;
+      left: 65.35%;
+      z-index: 2;
+      .logo-img {
+        margin-bottom: 3.36%;
+        img {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 175px;
+        }
+      }
+      h3.section-title {
+        font-size: 3.333vw;
+        margin-bottom: 3.36%;
+      }
+      .shop-collection-btn {
+        width: 93.28%;
+        padding: 3.92% 20.17%;
+        margin: 0 auto;
+        cursor: pointer;
+        p.btn-text {
+          font-size: 1.111vw;
+        }
       }
     }
   }
